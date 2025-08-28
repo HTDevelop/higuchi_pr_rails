@@ -1,0 +1,8 @@
+gcc -c /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ext/sqlite3/tmp/aarch64-redhat-linux/ports/sqlite3/3.50.3/sqlite-autoconf-3500300/sqlite3.c -o sqlite3.o -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1  -I. -fPIC  -DSQLITE_ENABLE_DBPAGE_VTAB=1 -DSQLITE_ENABLE_DBSTAT_VTAB=1 -DSQLITE_ENABLE_FTS5 -DSQLITE_ENABLE_MATH_FUNCTIONS -DSQLITE_THREADSAFE=1
+ar cr libsqlite3.a sqlite3.o
+gcc -o sqlite3 \
+	/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ext/sqlite3/tmp/aarch64-redhat-linux/ports/sqlite3/3.50.3/sqlite-autoconf-3500300/shell.c /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ext/sqlite3/tmp/aarch64-redhat-linux/ports/sqlite3/3.50.3/sqlite-autoconf-3500300/sqlite3.c -Wl,-rpath,/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/lib  -lm  -lz    \
+	 \
+	-I. -DSQLITE_ENABLE_DBPAGE_VTAB=1 -DSQLITE_ENABLE_DBSTAT_VTAB=1 -DSQLITE_ENABLE_FTS5 -DSQLITE_ENABLE_MATH_FUNCTIONS -DSQLITE_THREADSAFE=1 -DSQLITE_HAVE_ZLIB=1 \
+	-fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1    \
+	 

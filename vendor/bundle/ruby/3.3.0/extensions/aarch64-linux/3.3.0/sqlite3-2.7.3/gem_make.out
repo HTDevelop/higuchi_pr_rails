@@ -1,0 +1,54 @@
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ext/sqlite3
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-15701-q6ckm5.rb extconf.rb
+Building sqlite3-ruby using packaged sqlite3.
+Extracting sqlite-autoconf-3500300.tar.gz into tmp/aarch64-redhat-linux/ports/sqlite3/3.50.3... OK
+Running 'configure' for sqlite3 3.50.3... OK
+Running 'compile' for sqlite3 3.50.3... OK
+Running 'install' for sqlite3 3.50.3... OK
+Activating sqlite3 3.50.3 (from /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3)...
+checking for pkg-config for /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/lib/pkgconfig/sqlite3.pc... ["-I/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/include ", "", "-lsqlite3"]
+checking for whether -L/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/lib is accepted as LDFLAGS... yes
+checking for whether -lsqlite3 is accepted as LDFLAGS... yes
+checking for whether -lm is accepted as LDFLAGS... yes
+checking for whether -lz is accepted as LDFLAGS... yes
+checking for whether -DUSING_PACKAGED_LIBRARIES is accepted as CPPFLAGS... yes
+checking for whether -fvisibility=hidden is accepted as CFLAGS... yes
+checking for sqlite3.h... yes
+checking for sqlite3_libversion_number() in -lsqlite3... yes
+checking for rb_enc_interned_str_cstr()... yes
+checking for rb_proc_arity()... yes
+checking for rb_integer_pack()... yes
+checking for sqlite3_initialize()... yes
+checking for sqlite3_backup_init()... yes
+checking for sqlite3_column_database_name()... no
+checking for sqlite3_enable_load_extension()... yes
+checking for sqlite3_load_extension()... yes
+checking for sqlite3_open_v2()... yes
+checking for sqlite3_prepare_v2()... yes
+checking for sqlite3_db_name() in sqlite3.h... yes
+checking for sqlite3_error_offset() in sqlite3.h... yes
+checking for sqlite3_int64 in sqlite3.h... yes
+checking for sqlite3_uint64 in sqlite3.h... yes
+creating Makefile
+
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ext/sqlite3
+make DESTDIR\= clean
+rm -f 
+rm -fr sqlite3_native.so false aggregator.o backup.o database.o exception.o sqlite3.o statement.o *.bak mkmf.log .*.time
+
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ext/sqlite3
+make DESTDIR\=
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/include -DHAVE_RB_ENC_INTERNED_STR_CSTR -DHAVE_RB_PROC_ARITY -DHAVE_RB_INTEGER_PACK -DHAVE_SQLITE3_INITIALIZE -DHAVE_SQLITE3_BACKUP_INIT -DHAVE_SQLITE3_ENABLE_LOAD_EXTENSION -DHAVE_SQLITE3_LOAD_EXTENSION -DHAVE_SQLITE3_OPEN_V2 -DHAVE_SQLITE3_PREPARE_V2 -DHAVE_SQLITE3_DB_NAME -DHAVE_SQLITE3_ERROR_OFFSET -DHAVE_TYPE_SQLITE3_INT64 -DHAVE_TYPE_SQLITE3_UINT64    -DUSING_PACKAGED_LIBRARIES -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fasynchronous-unwind-tables -fstack-clash-protection -fPIC  -fvisibility=hidden  -o aggregator.o -c aggregator.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/include -DHAVE_RB_ENC_INTERNED_STR_CSTR -DHAVE_RB_PROC_ARITY -DHAVE_RB_INTEGER_PACK -DHAVE_SQLITE3_INITIALIZE -DHAVE_SQLITE3_BACKUP_INIT -DHAVE_SQLITE3_ENABLE_LOAD_EXTENSION -DHAVE_SQLITE3_LOAD_EXTENSION -DHAVE_SQLITE3_OPEN_V2 -DHAVE_SQLITE3_PREPARE_V2 -DHAVE_SQLITE3_DB_NAME -DHAVE_SQLITE3_ERROR_OFFSET -DHAVE_TYPE_SQLITE3_INT64 -DHAVE_TYPE_SQLITE3_UINT64    -DUSING_PACKAGED_LIBRARIES -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fasynchronous-unwind-tables -fstack-clash-protection -fPIC  -fvisibility=hidden  -o backup.o -c backup.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/include -DHAVE_RB_ENC_INTERNED_STR_CSTR -DHAVE_RB_PROC_ARITY -DHAVE_RB_INTEGER_PACK -DHAVE_SQLITE3_INITIALIZE -DHAVE_SQLITE3_BACKUP_INIT -DHAVE_SQLITE3_ENABLE_LOAD_EXTENSION -DHAVE_SQLITE3_LOAD_EXTENSION -DHAVE_SQLITE3_OPEN_V2 -DHAVE_SQLITE3_PREPARE_V2 -DHAVE_SQLITE3_DB_NAME -DHAVE_SQLITE3_ERROR_OFFSET -DHAVE_TYPE_SQLITE3_INT64 -DHAVE_TYPE_SQLITE3_UINT64    -DUSING_PACKAGED_LIBRARIES -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fasynchronous-unwind-tables -fstack-clash-protection -fPIC  -fvisibility=hidden  -o database.o -c database.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/include -DHAVE_RB_ENC_INTERNED_STR_CSTR -DHAVE_RB_PROC_ARITY -DHAVE_RB_INTEGER_PACK -DHAVE_SQLITE3_INITIALIZE -DHAVE_SQLITE3_BACKUP_INIT -DHAVE_SQLITE3_ENABLE_LOAD_EXTENSION -DHAVE_SQLITE3_LOAD_EXTENSION -DHAVE_SQLITE3_OPEN_V2 -DHAVE_SQLITE3_PREPARE_V2 -DHAVE_SQLITE3_DB_NAME -DHAVE_SQLITE3_ERROR_OFFSET -DHAVE_TYPE_SQLITE3_INT64 -DHAVE_TYPE_SQLITE3_UINT64    -DUSING_PACKAGED_LIBRARIES -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fasynchronous-unwind-tables -fstack-clash-protection -fPIC  -fvisibility=hidden  -o exception.o -c exception.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/include -DHAVE_RB_ENC_INTERNED_STR_CSTR -DHAVE_RB_PROC_ARITY -DHAVE_RB_INTEGER_PACK -DHAVE_SQLITE3_INITIALIZE -DHAVE_SQLITE3_BACKUP_INIT -DHAVE_SQLITE3_ENABLE_LOAD_EXTENSION -DHAVE_SQLITE3_LOAD_EXTENSION -DHAVE_SQLITE3_OPEN_V2 -DHAVE_SQLITE3_PREPARE_V2 -DHAVE_SQLITE3_DB_NAME -DHAVE_SQLITE3_ERROR_OFFSET -DHAVE_TYPE_SQLITE3_INT64 -DHAVE_TYPE_SQLITE3_UINT64    -DUSING_PACKAGED_LIBRARIES -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fasynchronous-unwind-tables -fstack-clash-protection -fPIC  -fvisibility=hidden  -o sqlite3.o -c sqlite3.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/include -DHAVE_RB_ENC_INTERNED_STR_CSTR -DHAVE_RB_PROC_ARITY -DHAVE_RB_INTEGER_PACK -DHAVE_SQLITE3_INITIALIZE -DHAVE_SQLITE3_BACKUP_INIT -DHAVE_SQLITE3_ENABLE_LOAD_EXTENSION -DHAVE_SQLITE3_LOAD_EXTENSION -DHAVE_SQLITE3_OPEN_V2 -DHAVE_SQLITE3_PREPARE_V2 -DHAVE_SQLITE3_DB_NAME -DHAVE_SQLITE3_ERROR_OFFSET -DHAVE_TYPE_SQLITE3_INT64 -DHAVE_TYPE_SQLITE3_UINT64    -DUSING_PACKAGED_LIBRARIES -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fasynchronous-unwind-tables -fstack-clash-protection -fPIC  -fvisibility=hidden  -o statement.o -c statement.c
+rm -f sqlite3_native.so
+gcc -shared -o sqlite3_native.so aggregator.o backup.o database.o exception.o sqlite3.o statement.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed  -L/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/lib -lsqlite3 -lm -lz -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1     -lruby -lsqlite3  -lsqlite3 -lm -lpthread  -lc
+
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ext/sqlite3
+make DESTDIR\= install
+/usr/bin/mkdir -p . ./.gem.20250828-15701-1lgb9c/sqlite3
+exit > .sitearchdir.-.sqlite3.time
+/usr/bin/install -c -m 0755 sqlite3_native.so ./.gem.20250828-15701-1lgb9c/sqlite3

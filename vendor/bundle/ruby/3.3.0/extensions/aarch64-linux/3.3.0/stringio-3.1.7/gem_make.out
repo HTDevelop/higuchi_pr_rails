@@ -1,0 +1,21 @@
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-3405-igwz7k.rb extconf.rb
+checking for rb_io_mode_t in ruby/io.h... no
+creating Makefile
+
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= clean
+rm -f 
+rm -fr stringio.so false stringio.o *.bak mkmf.log .*.time
+
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\=
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I.   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fasynchronous-unwind-tables -fstack-clash-protection -fPIC  -o stringio.o -c stringio.c
+rm -f stringio.so
+gcc -shared -o stringio.so stringio.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1     -lruby  -lm -lpthread  -lc
+
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= install
+/usr/bin/mkdir -p . ./.gem.20250828-3405-kiifn4
+exit > .sitearchdir.time
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20250828-3405-kiifn4

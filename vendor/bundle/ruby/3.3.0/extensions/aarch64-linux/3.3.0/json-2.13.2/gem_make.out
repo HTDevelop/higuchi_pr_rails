@@ -1,0 +1,31 @@
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/json-2.13.2/ext/json/ext/parser
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-14142-dr40g9.rb extconf.rb
+checking for rb_enc_interned_str() in ruby/encoding.h... yes
+checking for rb_hash_new_capa() in ruby.h... yes
+checking for rb_hash_bulk_insert() in ruby.h... yes
+checking for strnlen() in string.h... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+checking for arm_neon.h... yes
+checking for cpuid.h... no
+creating Makefile
+
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/json-2.13.2/ext/json/ext/parser
+make DESTDIR\= clean
+rm -f 
+rm -fr parser.so false parser.o *.bak mkmf.log .*.time
+
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/json-2.13.2/ext/json/ext/parser
+make DESTDIR\=
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RB_ENC_INTERNED_STR -DHAVE_RB_HASH_NEW_CAPA -DHAVE_RB_HASH_BULK_INSERT -DHAVE_STRNLEN -DHAVE_ARM_NEON_H -DJSON_ENABLE_SIMD    -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fasynchronous-unwind-tables -fstack-clash-protection -fPIC -std=c99  -o parser.o -c parser.c
+parser.c: In function ‘string_scan’:
+parser.c:978:9: warning: value computed is not used [-Wunused-value]
+  978 |         *state->cursor++;
+      |         ^~~~~~~~~~~~~~~~
+rm -f parser.so
+gcc -shared -o parser.so parser.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1     -lruby  -lm -lpthread  -lc
+
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/json-2.13.2/ext/json/ext/parser
+make DESTDIR\= install
+/usr/bin/mkdir -p . ./.gem.20250828-14142-fucl3x/json/ext
+exit > .sitearchdir.-.json.-.ext.time
+/usr/bin/install -c -m 0755 parser.so ./.gem.20250828-14142-fucl3x/json/ext

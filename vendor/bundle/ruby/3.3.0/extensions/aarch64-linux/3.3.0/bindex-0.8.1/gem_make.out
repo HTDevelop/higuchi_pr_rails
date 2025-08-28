@@ -1,0 +1,20 @@
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-14142-o5n5s6.rb extconf.rb
+creating Makefile
+
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= clean
+rm -f 
+rm -fr cruby.so false cruby.o *.bak mkmf.log .*.time
+
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\=
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I.   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fasynchronous-unwind-tables -fstack-clash-protection -fPIC -Wall  -o cruby.o -c cruby.c
+rm -f cruby.so
+gcc -shared -o cruby.so cruby.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1     -lruby  -lm -lpthread  -lc
+
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= install
+/usr/bin/mkdir -p . ./.gem.20250828-14142-cmm4vd/skiptrace/internal
+exit > .sitearchdir.-.skiptrace.-.internal.time
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20250828-14142-cmm4vd/skiptrace/internal

@@ -1,0 +1,10 @@
++ /usr/bin/install -d /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/lib
+/usr/bin/install -m 0644 libsqlite3.a "/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/lib"
++ /usr/bin/install -d /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/bin
+/usr/bin/install sqlite3 "/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/bin"
++ /usr/bin/install -d /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/include
+/usr/bin/install -m 0644 /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ext/sqlite3/tmp/aarch64-redhat-linux/ports/sqlite3/3.50.3/sqlite-autoconf-3500300/sqlite3.h /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ext/sqlite3/tmp/aarch64-redhat-linux/ports/sqlite3/3.50.3/sqlite-autoconf-3500300/sqlite3ext.h "/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/include"
++ /usr/bin/install -d /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/lib/pkgconfig
+/usr/bin/install -m 0644 sqlite3.pc "/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/lib/pkgconfig"
++ /usr/bin/install -d /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/share/man/man1
+/usr/bin/install -m 0644 /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ext/sqlite3/tmp/aarch64-redhat-linux/ports/sqlite3/3.50.3/sqlite-autoconf-3500300/sqlite3.1 "/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/share/man/man1"

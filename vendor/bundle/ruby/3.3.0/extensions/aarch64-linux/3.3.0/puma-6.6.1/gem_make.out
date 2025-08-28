@@ -1,0 +1,44 @@
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/puma-6.6.1/ext/puma_http11
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-14142-tql6to.rb extconf.rb
+checking for pkg-config for openssl... [" ", "", "-lssl -lcrypto"]
+──── Using OpenSSL pkgconfig (openssl.pc) ────
+checking for openssl/bio.h... yes
+
+──── Below are yes for 1.0.2 & later ────
+checking for DTLS_method() in openssl/ssl.h... yes
+checking for SSL_CTX_set_session_cache_mode(NULL, 0) in openssl/ssl.h... yes
+
+──── Below are yes for 1.1.0 & later ────
+checking for TLS_server_method() in openssl/ssl.h... yes
+checking for SSL_CTX_set_min_proto_version(NULL, 0) in openssl/ssl.h... yes
+
+──── Below is yes for 1.1.0 and later, but isn't documented until 3.0.0 ────
+checking for SSL_CTX_set_dh_auto(NULL, 0) in openssl/ssl.h... yes
+
+──── Below is yes for 1.1.1 & later ────
+checking for SSL_CTX_set_ciphersuites(NULL, "") in openssl/ssl.h... yes
+
+──── Below is yes for 3.0.0 & later ────
+checking for SSL_get1_peer_certificate() in openssl/ssl.h... yes
+
+checking for Random.bytes... yes
+creating Makefile
+
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/puma-6.6.1/ext/puma_http11
+make DESTDIR\= clean
+rm -f 
+rm -fr puma_http11.so false http11_parser.o mini_ssl.o puma_http11.o *.bak mkmf.log .*.time
+
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/puma-6.6.1/ext/puma_http11
+make DESTDIR\=
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I.  -DHAVE_OPENSSL_BIO_H -DHAVE_DTLS_METHOD -DHAVE_SSL_CTX_SET_SESSION_CACHE_MODE -DHAVE_TLS_SERVER_METHOD -DHAVE_SSL_CTX_SET_MIN_PROTO_VERSION -DHAVE_SSL_CTX_SET_DH_AUTO -DHAVE_SSL_CTX_SET_CIPHERSUITES -DHAVE_SSL_GET1_PEER_CERTIFICATE -DHAVE_RANDOM_BYTES    -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fasynchronous-unwind-tables -fstack-clash-protection -fPIC   -o http11_parser.o -c http11_parser.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I.  -DHAVE_OPENSSL_BIO_H -DHAVE_DTLS_METHOD -DHAVE_SSL_CTX_SET_SESSION_CACHE_MODE -DHAVE_TLS_SERVER_METHOD -DHAVE_SSL_CTX_SET_MIN_PROTO_VERSION -DHAVE_SSL_CTX_SET_DH_AUTO -DHAVE_SSL_CTX_SET_CIPHERSUITES -DHAVE_SSL_GET1_PEER_CERTIFICATE -DHAVE_RANDOM_BYTES    -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fasynchronous-unwind-tables -fstack-clash-protection -fPIC   -o mini_ssl.o -c mini_ssl.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I.  -DHAVE_OPENSSL_BIO_H -DHAVE_DTLS_METHOD -DHAVE_SSL_CTX_SET_SESSION_CACHE_MODE -DHAVE_TLS_SERVER_METHOD -DHAVE_SSL_CTX_SET_MIN_PROTO_VERSION -DHAVE_SSL_CTX_SET_DH_AUTO -DHAVE_SSL_CTX_SET_CIPHERSUITES -DHAVE_SSL_GET1_PEER_CERTIFICATE -DHAVE_RANDOM_BYTES    -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fasynchronous-unwind-tables -fstack-clash-protection -fPIC   -o puma_http11.o -c puma_http11.c
+rm -f puma_http11.so
+gcc -shared -o puma_http11.so http11_parser.o mini_ssl.o puma_http11.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed  -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1     -lruby  -lssl -lcrypto -lm -lpthread  -lc
+
+current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/puma-6.6.1/ext/puma_http11
+make DESTDIR\= install
+/usr/bin/mkdir -p . ./.gem.20250828-14142-l70t5c/puma
+exit > .sitearchdir.-.puma.time
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20250828-14142-l70t5c/puma
