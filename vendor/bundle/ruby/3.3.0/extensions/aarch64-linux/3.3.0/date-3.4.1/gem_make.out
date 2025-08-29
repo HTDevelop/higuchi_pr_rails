@@ -1,5 +1,7 @@
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/date-3.4.1/ext/date
-/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-3405-1o0r00.rb extconf.rb
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-29416-4rmpgk.rb extconf.rb
+Ignoring bigdecimal-3.2.2 because its extensions are not built. Try: gem pristine bigdecimal --version 3.2.2
+Ignoring date-3.4.1 because its extensions are not built. Try: gem pristine date --version 3.4.1
 checking for rb_category_warn()... yes
 checking for timezone in time.h with  -Werror... yes
 checking for altzone in time.h with  -Werror... no
@@ -22,6 +24,6 @@ lto-wrapper: warning: using serial compilation of 4 LTRANS jobs
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/date-3.4.1/ext/date
 make DESTDIR\= install
-/usr/bin/mkdir -p . ./.gem.20250828-3405-oovid9
+/usr/bin/mkdir -p . ./.gem.20250828-29416-y2owps
 exit > .sitearchdir.time
-/usr/bin/install -c -m 0755 date_core.so ./.gem.20250828-3405-oovid9
+/usr/bin/install -c -m 0755 date_core.so ./.gem.20250828-29416-y2owps

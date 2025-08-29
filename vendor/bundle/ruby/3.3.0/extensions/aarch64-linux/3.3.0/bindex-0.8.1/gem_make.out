@@ -1,5 +1,7 @@
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
-/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-14142-o5n5s6.rb extconf.rb
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-29416-wkd5wz.rb extconf.rb
+Ignoring bindex-0.8.1 because its extensions are not built. Try: gem pristine bindex --version 0.8.1
+Ignoring date-3.4.1 because its extensions are not built. Try: gem pristine date --version 3.4.1
 creating Makefile
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
@@ -15,6 +17,6 @@ gcc -shared -o cruby.so cruby.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-neede
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
 make DESTDIR\= install
-/usr/bin/mkdir -p . ./.gem.20250828-14142-cmm4vd/skiptrace/internal
+/usr/bin/mkdir -p . ./.gem.20250828-29416-8n44je/skiptrace/internal
 exit > .sitearchdir.-.skiptrace.-.internal.time
-/usr/bin/install -c -m 0755 cruby.so ./.gem.20250828-14142-cmm4vd/skiptrace/internal
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20250828-29416-8n44je/skiptrace/internal

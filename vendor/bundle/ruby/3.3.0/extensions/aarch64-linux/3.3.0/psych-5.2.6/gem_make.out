@@ -1,5 +1,7 @@
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/psych-5.2.6/ext/psych
-/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-3405-xcg6r6.rb extconf.rb
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-29416-d6ksvu.rb extconf.rb
+Ignoring nokogiri-1.18.9 because its extensions are not built. Try: gem pristine nokogiri --version 1.18.9
+Ignoring psych-5.2.6 because its extensions are not built. Try: gem pristine psych --version 5.2.6
 checking for pkg-config for yaml-0.1... [" ", "", "-lyaml"]
 checking for yaml.h... yes
 checking for yaml_get_version() in -lyaml... yes
@@ -25,6 +27,6 @@ gcc -shared -o psych.so psych.o psych_emitter.o psych_parser.o psych_to_ruby.o p
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/psych-5.2.6/ext/psych
 make DESTDIR\= install
-/usr/bin/mkdir -p . ./.gem.20250828-3405-gx8243
+/usr/bin/mkdir -p . ./.gem.20250828-29416-7rfbnb
 exit > .sitearchdir.time
-/usr/bin/install -c -m 0755 psych.so ./.gem.20250828-3405-gx8243
+/usr/bin/install -c -m 0755 psych.so ./.gem.20250828-29416-7rfbnb

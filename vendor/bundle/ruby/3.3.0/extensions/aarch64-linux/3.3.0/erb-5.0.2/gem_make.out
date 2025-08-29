@@ -1,5 +1,7 @@
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/erb-5.0.2/ext/erb/escape
-/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-3405-d5vr3z.rb extconf.rb
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-29416-109ikq.rb extconf.rb
+Ignoring date-3.4.1 because its extensions are not built. Try: gem pristine date --version 3.4.1
+Ignoring erb-5.0.2 because its extensions are not built. Try: gem pristine erb --version 5.0.2
 checking for rb_ext_ractor_safe() in ruby.h... yes
 creating Makefile
 
@@ -16,6 +18,6 @@ gcc -shared -o escape.so escape.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-nee
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/erb-5.0.2/ext/erb/escape
 make DESTDIR\= install
-/usr/bin/mkdir -p . ./.gem.20250828-3405-wth0ss/erb
+/usr/bin/mkdir -p . ./.gem.20250828-29416-ggny8f/erb
 exit > .sitearchdir.-.erb.time
-/usr/bin/install -c -m 0755 escape.so ./.gem.20250828-3405-wth0ss/erb
+/usr/bin/install -c -m 0755 escape.so ./.gem.20250828-29416-ggny8f/erb

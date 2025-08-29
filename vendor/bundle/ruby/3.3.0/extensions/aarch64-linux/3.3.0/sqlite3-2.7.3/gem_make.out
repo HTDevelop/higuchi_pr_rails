@@ -1,5 +1,7 @@
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ext/sqlite3
-/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-15701-q6ckm5.rb extconf.rb
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-29416-36tfuh.rb extconf.rb
+Ignoring prism-1.4.0 because its extensions are not built. Try: gem pristine prism --version 1.4.0
+Ignoring sqlite3-2.7.3 because its extensions are not built. Try: gem pristine sqlite3 --version 2.7.3
 Building sqlite3-ruby using packaged sqlite3.
 Extracting sqlite-autoconf-3500300.tar.gz into tmp/aarch64-redhat-linux/ports/sqlite3/3.50.3... OK
 Running 'configure' for sqlite3 3.50.3... OK
@@ -49,6 +51,6 @@ gcc -shared -o sqlite3_native.so aggregator.o backup.o database.o exception.o sq
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ext/sqlite3
 make DESTDIR\= install
-/usr/bin/mkdir -p . ./.gem.20250828-15701-1lgb9c/sqlite3
+/usr/bin/mkdir -p . ./.gem.20250828-29416-n3ipll/sqlite3
 exit > .sitearchdir.-.sqlite3.time
-/usr/bin/install -c -m 0755 sqlite3_native.so ./.gem.20250828-15701-1lgb9c/sqlite3
+/usr/bin/install -c -m 0755 sqlite3_native.so ./.gem.20250828-29416-n3ipll/sqlite3

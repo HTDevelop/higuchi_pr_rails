@@ -14,7 +14,7 @@ return 0;
 }
 ============
 Failed: gcc -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1 conftest__.c -o conftest__
-/usr/bin/ld: /tmp/ccFBtrBG.o: in function `main':
+/usr/bin/ld: /tmp/cczamZVI.o: in function `main':
 conftest__.c:(.text.startup+0x8): undefined reference to `localtime_s'
 collect2: error: ld returned 1 exit status
 ============
@@ -26,7 +26,7 @@ return 0;
 }
 ============
 Failed: gcc -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1 conftest__.c -o conftest__
-/usr/bin/ld: /tmp/ccnK7W5S.o: in function `main':
+/usr/bin/ld: /tmp/ccWkY0X7.o: in function `main':
 conftest__.c:(.text.startup+0x8): undefined reference to `deflate'
 collect2: error: ld returned 1 exit status
 ============
@@ -53,7 +53,7 @@ conftest__.c:1:13: warning: conflicting types for built-in function ‘ceil’; 
 conftest__.c:1:1: note: ‘ceil’ is declared in header ‘<math.h>’
   +++ |+#include <math.h>
     1 | extern void ceil(void);
-/usr/bin/ld: /tmp/ccjqhyXT.o: in function `main':
+/usr/bin/ld: /tmp/cc3h0J78.o: in function `main':
 conftest__.c:(.text.startup+0x8): undefined reference to `ceil'
 collect2: error: ld returned 1 exit status
 ============

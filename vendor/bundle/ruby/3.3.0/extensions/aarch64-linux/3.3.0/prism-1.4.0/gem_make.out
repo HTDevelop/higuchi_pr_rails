@@ -1,5 +1,7 @@
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/prism-1.4.0/ext/prism
-/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-14142-vqciiv.rb extconf.rb
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-29416-grko2q.rb extconf.rb
+Ignoring json-2.13.2 because its extensions are not built. Try: gem pristine json --version 2.13.2
+Ignoring prism-1.4.0 because its extensions are not built. Try: gem pristine prism --version 1.4.0
 checking for prism.h in /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/prism-1.4.0/include... yes
 checking for prism/extension.h in /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/prism-1.4.0/ext... yes
 checking for whether -fvisibility=hidden is accepted as CFLAGS... yes
@@ -42,6 +44,6 @@ lto-wrapper: warning: using serial compilation of 10 LTRANS jobs
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/prism-1.4.0/ext/prism
 make DESTDIR\= install
-/usr/bin/mkdir -p . ./.gem.20250828-14142-nmpy07/prism
+/usr/bin/mkdir -p . ./.gem.20250828-29416-rut0h4/prism
 exit > .sitearchdir.-.prism.time
-/usr/bin/install -c -m 0755 prism.so ./.gem.20250828-14142-nmpy07/prism
+/usr/bin/install -c -m 0755 prism.so ./.gem.20250828-29416-rut0h4/prism

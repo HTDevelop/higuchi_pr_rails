@@ -1,5 +1,7 @@
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/json-2.13.2/ext/json/ext/parser
-/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-14142-dr40g9.rb extconf.rb
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-29416-bm1iwr.rb extconf.rb
+Ignoring json-2.13.2 because its extensions are not built. Try: gem pristine json --version 2.13.2
+Ignoring prism-1.4.0 because its extensions are not built. Try: gem pristine prism --version 1.4.0
 checking for rb_enc_interned_str() in ruby/encoding.h... yes
 checking for rb_hash_new_capa() in ruby.h... yes
 checking for rb_hash_bulk_insert() in ruby.h... yes
@@ -26,6 +28,6 @@ gcc -shared -o parser.so parser.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-nee
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/json-2.13.2/ext/json/ext/parser
 make DESTDIR\= install
-/usr/bin/mkdir -p . ./.gem.20250828-14142-fucl3x/json/ext
+/usr/bin/mkdir -p . ./.gem.20250828-29416-d7zzx2/json/ext
 exit > .sitearchdir.-.json.-.ext.time
-/usr/bin/install -c -m 0755 parser.so ./.gem.20250828-14142-fucl3x/json/ext
+/usr/bin/install -c -m 0755 parser.so ./.gem.20250828-29416-d7zzx2/json/ext
