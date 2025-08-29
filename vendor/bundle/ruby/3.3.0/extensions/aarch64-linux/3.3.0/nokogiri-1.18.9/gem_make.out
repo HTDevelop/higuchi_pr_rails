@@ -1,5 +1,7 @@
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/nokogiri-1.18.9/ext/nokogiri
-/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-3405-1fkf1i.rb extconf.rb
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-29416-vc1374.rb extconf.rb
+Ignoring nokogiri-1.18.9 because its extensions are not built. Try: gem pristine nokogiri --version 1.18.9
+Ignoring sqlite3-2.7.3 because its extensions are not built. Try: gem pristine sqlite3 --version 2.7.3
 checking for whether -std=c99 is accepted as CFLAGS... yes
 checking for whether -Wno-declaration-after-statement is accepted as CFLAGS... yes
 checking for whether -O2 is accepted as CFLAGS... yes
@@ -144,86 +146,87 @@ rm -f nokogiri.so
 gcc -shared -o nokogiri.so gumbo.o html4_document.o html4_element_description.o html4_entity_lookup.o html4_sax_parser.o html4_sax_parser_context.o html4_sax_push_parser.o libxml2_polyfill.o nokogiri.o test_global_handlers.o xml_attr.o xml_attribute_decl.o xml_cdata.o xml_comment.o xml_document.o xml_document_fragment.o xml_dtd.o xml_element_content.o xml_element_decl.o xml_encoding_handler.o xml_entity_decl.o xml_entity_reference.o xml_namespace.o xml_node.o xml_node_set.o xml_processing_instruction.o xml_reader.o xml_relax_ng.o xml_sax_parser.o xml_sax_parser_context.o xml_sax_push_parser.o xml_schema.o xml_syntax_error.o xml_text.o xml_xpath_context.o xslt_stylesheet.o -L. -L/usr/lib64 -L/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/nokogiri-1.18.9/ports/aarch64-linux/libxml2/2.13.8/lib -L/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/nokogiri-1.18.9/ports/aarch64-linux/libxslt/1.1.43/lib -L/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/nokogiri-1.18.9/ext/nokogiri/ports/aarch64-linux/libgumbo/1.0.0-nokogiri/lib -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1     -lruby /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/nokogiri-1.18.9/ports/aarch64-linux/libxslt/1.1.43/lib/libexslt.a -lm -llzma -lz /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/nokogiri-1.18.9/ports/aarch64-linux/libxml2/2.13.8/lib/libxml2.a /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/nokogiri-1.18.9/ports/aarch64-linux/libxslt/1.1.43/lib/libxslt.a -lm -llzma -lz /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/nokogiri-1.18.9/ports/aarch64-linux/libxml2/2.13.8/lib/libxml2.a -llzma /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/nokogiri-1.18.9/ext/nokogiri/ports/aarch64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lm -lpthread  -lc
 lto-wrapper: warning: using serial compilation of 2 LTRANS jobs
 /usr/bin/ruby ./extconf.rb --clean --enable-static
+Ignoring nokogiri-1.18.9 because its extensions are not built. Try: gem pristine nokogiri --version 1.18.9
 Cleaning files only used during build.
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/nokogiri-1.18.9/ext/nokogiri
 make DESTDIR\= install
-/usr/bin/mkdir -p . ./.gem.20250828-3405-nczg6s/nokogiri
+/usr/bin/mkdir -p . ./.gem.20250828-29416-o0ooy6/nokogiri
 exit > .sitearchdir.-.nokogiri.time
-/usr/bin/install -c -m 0755 nokogiri.so ./.gem.20250828-3405-nczg6s/nokogiri
-/usr/bin/mkdir -p . ./.gem.20250828-3405-nczg6s/nokogiri/include/libexslt
+/usr/bin/install -c -m 0755 nokogiri.so ./.gem.20250828-29416-o0ooy6/nokogiri
+/usr/bin/mkdir -p . ./.gem.20250828-29416-o0ooy6/nokogiri/include/libexslt
 exit > .sitelibdir.-.nokogiri.-.include.-.libexslt.time
-/usr/bin/mkdir -p . ./.gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
+/usr/bin/mkdir -p . ./.gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
 exit > .sitelibdir.-.nokogiri.-.include.-.libxml2.-.libxml.time
-/usr/bin/mkdir -p . ./.gem.20250828-3405-nczg6s/nokogiri/include/libxslt
+/usr/bin/mkdir -p . ./.gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
 exit > .sitelibdir.-.nokogiri.-.include.-.libxslt.time
-/usr/bin/install -c -m 644 ./include/libexslt/exslt.h .gem.20250828-3405-nczg6s/nokogiri/include/libexslt
-/usr/bin/install -c -m 644 ./include/libexslt/exsltconfig.h .gem.20250828-3405-nczg6s/nokogiri/include/libexslt
-/usr/bin/install -c -m 644 ./include/libexslt/exsltexports.h .gem.20250828-3405-nczg6s/nokogiri/include/libexslt
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/HTMLparser.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/HTMLtree.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/SAX.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/SAX2.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/c14n.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/catalog.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/chvalid.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/debugXML.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/dict.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/encoding.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/entities.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/globals.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/hash.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/list.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/nanoftp.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/nanohttp.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/parser.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/parserInternals.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/pattern.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/relaxng.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/schemasInternals.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/schematron.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/threads.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/tree.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/uri.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/valid.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xinclude.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xlink.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlIO.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlautomata.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlerror.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlexports.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlmemory.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlmodule.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlreader.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlregexp.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlsave.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlschemas.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlschemastypes.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlstring.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlunicode.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlversion.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlwriter.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xpath.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xpathInternals.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxml2/libxml/xpointer.h .gem.20250828-3405-nczg6s/nokogiri/include/libxml2/libxml
-/usr/bin/install -c -m 644 ./include/libxslt/attributes.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/documents.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/extensions.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/extra.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/functions.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/imports.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/keys.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/namespaces.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/numbersInternals.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/pattern.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/preproc.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/security.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/templates.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/transform.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/variables.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/xslt.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/xsltInternals.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/xsltconfig.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/xsltexports.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/xsltlocale.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
-/usr/bin/install -c -m 644 ./include/libxslt/xsltutils.h .gem.20250828-3405-nczg6s/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libexslt/exslt.h .gem.20250828-29416-o0ooy6/nokogiri/include/libexslt
+/usr/bin/install -c -m 644 ./include/libexslt/exsltconfig.h .gem.20250828-29416-o0ooy6/nokogiri/include/libexslt
+/usr/bin/install -c -m 644 ./include/libexslt/exsltexports.h .gem.20250828-29416-o0ooy6/nokogiri/include/libexslt
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/HTMLparser.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/HTMLtree.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/SAX.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/SAX2.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/c14n.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/catalog.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/chvalid.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/debugXML.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/dict.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/encoding.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/entities.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/globals.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/hash.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/list.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/nanoftp.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/nanohttp.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/parser.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/parserInternals.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/pattern.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/relaxng.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/schemasInternals.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/schematron.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/threads.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/tree.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/uri.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/valid.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xinclude.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xlink.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlIO.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlautomata.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlerror.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlexports.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlmemory.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlmodule.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlreader.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlregexp.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlsave.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlschemas.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlschemastypes.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlstring.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlunicode.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlversion.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xmlwriter.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xpath.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xpathInternals.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxml2/libxml/xpointer.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxml2/libxml
+/usr/bin/install -c -m 644 ./include/libxslt/attributes.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/documents.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/extensions.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/extra.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/functions.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/imports.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/keys.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/namespaces.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/numbersInternals.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/pattern.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/preproc.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/security.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/templates.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/transform.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/variables.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/xslt.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/xsltInternals.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/xsltconfig.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/xsltexports.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/xsltlocale.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt
+/usr/bin/install -c -m 644 ./include/libxslt/xsltutils.h .gem.20250828-29416-o0ooy6/nokogiri/include/libxslt

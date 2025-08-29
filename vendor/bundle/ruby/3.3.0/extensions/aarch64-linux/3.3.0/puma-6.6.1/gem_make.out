@@ -1,5 +1,7 @@
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/puma-6.6.1/ext/puma_http11
-/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-14142-tql6to.rb extconf.rb
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-29416-s27srr.rb extconf.rb
+Ignoring nokogiri-1.18.9 because its extensions are not built. Try: gem pristine nokogiri --version 1.18.9
+Ignoring puma-6.6.1 because its extensions are not built. Try: gem pristine puma --version 6.6.1
 checking for pkg-config for openssl... [" ", "", "-lssl -lcrypto"]
 ──── Using OpenSSL pkgconfig (openssl.pc) ────
 checking for openssl/bio.h... yes
@@ -39,6 +41,6 @@ gcc -shared -o puma_http11.so http11_parser.o mini_ssl.o puma_http11.o -L. -L/us
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/puma-6.6.1/ext/puma_http11
 make DESTDIR\= install
-/usr/bin/mkdir -p . ./.gem.20250828-14142-l70t5c/puma
+/usr/bin/mkdir -p . ./.gem.20250828-29416-kf5z7o/puma
 exit > .sitearchdir.-.puma.time
-/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20250828-14142-l70t5c/puma
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20250828-29416-kf5z7o/puma

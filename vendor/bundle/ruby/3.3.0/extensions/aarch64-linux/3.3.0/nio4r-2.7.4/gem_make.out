@@ -1,5 +1,7 @@
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/nio4r-2.7.4/ext/nio4r
-/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-3405-416j7c.rb extconf.rb
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-29416-h7wvk9.rb extconf.rb
+Ignoring bigdecimal-3.2.2 because its extensions are not built. Try: gem pristine bigdecimal --version 3.2.2
+Ignoring nio4r-2.7.4 because its extensions are not built. Try: gem pristine nio4r --version 2.7.4
 checking for unistd.h... yes
 checking for rb_io_descriptor()... yes
 checking for linux/aio_abi.h... yes
@@ -976,6 +978,6 @@ gcc -shared -o nio4r_ext.so bytebuffer.o monitor.o nio4r_ext.o selector.o -L. -L
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/nio4r-2.7.4/ext/nio4r
 make DESTDIR\= install
-/usr/bin/mkdir -p . ./.gem.20250828-3405-f21q1z
+/usr/bin/mkdir -p . ./.gem.20250828-29416-6i4bbn
 exit > .sitearchdir.time
-/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20250828-3405-f21q1z
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20250828-29416-6i4bbn

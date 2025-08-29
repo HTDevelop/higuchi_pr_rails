@@ -408,7 +408,7 @@ checked program was:
 /* end */
 
 LD_LIBRARY_PATH=.:/usr/lib64 "gcc -o conftest -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/include    -DUSING_PACKAGED_LIBRARIES -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fasynchronous-unwind-tables -fstack-clash-protection -fPIC  -fvisibility=hidden conftest.c  -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed  -L/root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ports/aarch64-redhat-linux/sqlite3/3.50.3/lib -lsqlite3 -lm -lz    -lsqlite3  -lsqlite3 -lruby -lsqlite3  -lsqlite3 -lm -lpthread  -lc"
-/usr/bin/ld: /tmp/cc8x9rOy.ltrans0.ltrans.o: in function `t':
+/usr/bin/ld: /tmp/cc95QdSY.ltrans0.ltrans.o: in function `t':
 /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.3/ext/sqlite3/conftest.c:15: undefined reference to `sqlite3_column_database_name'
 collect2: error: ld returned 1 exit status
 checked program was:

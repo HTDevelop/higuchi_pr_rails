@@ -1,5 +1,7 @@
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/bcrypt_pbkdf-1.1.1/ext/mri
-/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-14142-djqgzi.rb extconf.rb
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-29416-rhjbd8.rb extconf.rb
+Ignoring bcrypt_pbkdf-1.1.1 because its extensions are not built. Try: gem pristine bcrypt_pbkdf --version 1.1.1
+Ignoring date-3.4.1 because its extensions are not built. Try: gem pristine date --version 3.4.1
 creating Makefile
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/bcrypt_pbkdf-1.1.1/ext/mri
@@ -19,6 +21,6 @@ gcc -shared -o bcrypt_pbkdf_ext.so bcrypt_pbkdf.o bcrypt_pbkdf_ext.o blowfish.o 
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/bcrypt_pbkdf-1.1.1/ext/mri
 make DESTDIR\= install
-/usr/bin/mkdir -p . ./.gem.20250828-14142-3k0uam
+/usr/bin/mkdir -p . ./.gem.20250828-29416-7uvd33
 exit > .sitearchdir.time
-/usr/bin/install -c -m 0755 bcrypt_pbkdf_ext.so ./.gem.20250828-14142-3k0uam
+/usr/bin/install -c -m 0755 bcrypt_pbkdf_ext.so ./.gem.20250828-29416-7uvd33

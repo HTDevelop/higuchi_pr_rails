@@ -1,5 +1,6 @@
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/bigdecimal-3.2.2/ext/bigdecimal
-/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-3405-ls1s1z.rb extconf.rb
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-29416-6sottx.rb extconf.rb
+Ignoring bigdecimal-3.2.2 because its extensions are not built. Try: gem pristine bigdecimal --version 3.2.2
 checking for __builtin_clz()... yes
 checking for __builtin_clzl()... yes
 checking for __builtin_clzll()... yes
@@ -40,6 +41,6 @@ lto-wrapper: warning: using serial compilation of 2 LTRANS jobs
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/bigdecimal-3.2.2/ext/bigdecimal
 make DESTDIR\= install
-/usr/bin/mkdir -p . ./.gem.20250828-3405-71r6fx
+/usr/bin/mkdir -p . ./.gem.20250828-29416-ng8mj5
 exit > .sitearchdir.time
-/usr/bin/install -c -m 0755 bigdecimal.so ./.gem.20250828-3405-71r6fx
+/usr/bin/install -c -m 0755 bigdecimal.so ./.gem.20250828-29416-ng8mj5

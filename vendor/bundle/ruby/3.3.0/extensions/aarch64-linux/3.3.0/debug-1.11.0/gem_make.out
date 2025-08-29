@@ -1,5 +1,7 @@
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
-/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-14142-oeetz0.rb extconf.rb
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-29416-rtdfzc.rb extconf.rb
+Ignoring debug-1.11.0 because its extensions are not built. Try: gem pristine debug --version 1.11.0
+Ignoring nokogiri-1.18.9 because its extensions are not built. Try: gem pristine nokogiri --version 1.18.9
 creating Makefile
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
@@ -16,6 +18,6 @@ gcc -shared -o debug.so debug.o iseq_collector.o -L. -L/usr/lib64 -L. -Wl,-z,rel
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
 make DESTDIR\= install
-/usr/bin/mkdir -p . ./.gem.20250828-14142-auliua/debug
+/usr/bin/mkdir -p . ./.gem.20250828-29416-3pc7ut/debug
 exit > .sitearchdir.-.debug.time
-/usr/bin/install -c -m 0755 debug.so ./.gem.20250828-14142-auliua/debug
+/usr/bin/install -c -m 0755 debug.so ./.gem.20250828-29416-3pc7ut/debug

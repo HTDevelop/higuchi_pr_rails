@@ -1,5 +1,7 @@
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.8.0/ext/websocket-driver
-/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-3405-fei6yx.rb extconf.rb
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20250828-29416-ma99v8.rb extconf.rb
+Ignoring nokogiri-1.18.9 because its extensions are not built. Try: gem pristine nokogiri --version 1.18.9
+Ignoring websocket-driver-0.8.0 because its extensions are not built. Try: gem pristine websocket-driver --version 0.8.0
 creating Makefile
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.8.0/ext/websocket-driver
@@ -15,6 +17,6 @@ gcc -shared -o websocket_mask.so websocket_mask.o -L. -L/usr/lib64 -L. -Wl,-z,re
 
 current directory: /root/higuchi_pr_rails/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.8.0/ext/websocket-driver
 make DESTDIR\= install
-/usr/bin/mkdir -p . ./.gem.20250828-3405-i6hj5v
+/usr/bin/mkdir -p . ./.gem.20250828-29416-o5vsu8
 exit > .sitearchdir.time
-/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20250828-3405-i6hj5v
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20250828-29416-o5vsu8
